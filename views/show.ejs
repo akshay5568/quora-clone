@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows Posts</title>
+    <link rel="stylesheet" href="/show.css">
+</head>
+<body>
+    <h1>Here Is Your Post in detail</h1>
+    <div>
+       
+        <p> post id:<%= post.id %></p>
+     
+    <div class="post">
+        <h3 class="user">@<%= post.username %></h3>
+        <h4 class="content"><%= post.content %></h4>
+     </div>
+
+     <form action="http://localhost:8080/posts">
+        <button>Home</button>
+     </form>
+
+    </div>
+     
+</body>
+</html>

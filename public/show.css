@@ -1,0 +1,27 @@
+h1
+{
+    color: maroon;
+}
+
+div{
+    width: 30%;
+    background-color: salmon;
+}
+
+button{
+    color: moccasin;
+    position: relative;
+    left: 80%;
+    margin: 5px;
+    padding: 15px;
+    border: none;
+    text-decoration: none;
+    background-color: maroon;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover{
+    box-shadow: 2px 2px 2px 2px grey;
+    color: white;
+}

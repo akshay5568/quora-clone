@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+ }
+ 
+ html,body {
+     height: 100%;
+     width: 100%; 
+     background-color: #212121;
+ }
+ 
+ h1{
+     text-align: center;
+     padding: 15px;
+     background-color: #545252;
+     color: white;
+ }
+ 
+ 
+ #inputCountry{
+     position: absolute;
+     left: 25%;
+     top: 25%;
+     padding:5px ;
+     border-radius: 5px;
+     font-size: medium;
+     transition: 0.2s;
+ }
+ #inputCountry:hover{
+     box-shadow: 2px  2px 2px 2px grey;
+ }
+ 
+ #inputState{
+     position: absolute;
+     left: 45%;
+     top: 25%;
+     padding: 5px;
+     border-radius: 5px;
+     font-size: medium;
+     transition: 0.2s;
+ }
+ #inputState:hover{
+     box-shadow: 2px  2px 2px 2px grey;
+ }
+ 
+ button{
+     position: absolute;
+     left: 65%;
+     top: 25%;
+     padding: 8px;
+     padding-left: 15px;
+     padding-right: 15px;
+     border-radius: 5px;
+     background-color: rgb(239, 92, 92);
+     color: white;
+     border: none;
+     transition: 0.2s;
+ }
+ 
+ button:hover{
+     border: 2px solid salmon;
+     box-shadow: 2px  2px 2px 2px grey;
+ }
+ 
+ ul{
+     width: 600px;
+     height: auto;
+     color: white;
+     position: absolute;
+     top: 50%;
+     left: 26%;
+     border: 2px solid gray;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ h3{
+     color: white;
+     position: absolute;
+     top: 35.5%;
+     left: 25%;
+ }
+ #totalCollage{
+     position: absolute;
+     top: 36%;
+     left: 45%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 175px;
+     height: 20px;
+     border: 2px solid grey;
+     border-radius: 5px;
+     color: white;
+ }

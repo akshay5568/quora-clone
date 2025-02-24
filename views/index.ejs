@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quora Posts</h1>
+        <a href="http://localhost:8080/posts/new">Write Your post</a>
+    </header>
+
+    <p>
+
+    </p>
+
+    <h2>
+        Helping To Finde Your College. <br><br>
+        <a href="http://localhost:8080/collegefinder">Finde Your College</a>
+    </h2>
+   
+
+    <% for (post of posts){ %>
+    <div class="post">
+      
+        <h3 class="id"> id: <%=post.id %></h3>
+      
+        <h3 class="user">@<%= post.username %></h3>
+      
+        <h4 class="content"><%= post.content %></h4>
+      
+       
+        <div class="button">
+            <a href="http://localhost:8080/posts/<%=post.id%>">SEE POST</a>
+      
+     
+            <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
+    
+            <form method="POST" action="/posts/<%= post.id%>?_method=DELETE">
+                <button>DELETE</button>
+            </form>
+        </div>
+       
+   
+            
+    </div>
+ <% } %>
+</body>
+</html>
+
